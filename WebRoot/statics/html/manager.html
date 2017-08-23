@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>超市订单管理系统</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap-datetimepicker.css">
+
+</head>
+<body>
+<div class="container">
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img alt="Brand" src="../images/buy.png" height="32" width="40"/>
+                    </a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">超市订单管理系统<span class="sr-only">(current)</span></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">欢迎系统管理员登录</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">管理菜单<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">订单管理</a></li>
+                            <li><a href="#">供应商管理</a></li>
+                            <li><a href="#">用户管理</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">修改密码</a></li>
+                        </ul>
+                    </li>
+                        <li><a href="#">退出</a></li>
+                    </ul>
+                    <form class="navbar-form navbar-right">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    </header>
+
+    <!-- 内容部分 -->
+    <section class="row">
+        <!-- 左边栏部分 -->
+        <section class="col-sm-3 col-lg-3 col-md-3 pull-left" style="height: 600px;">
+            <ul class="nav nav-pills nav-stacked">
+                <li role="presentation" class="active text-center"><a href="#">功能列表</a></li>
+                <li role="presentation"><a href="#"><img src="../images/zd.png" height="19" width="30"/>订单管理</a></li>
+                <li role="presentation"><a href="#"><img src="../images/gys.png" height="30" width="30"/>供应商管理</a></li>
+                <li role="presentation"><a href="#"><img src="../images/yh.png" height="30" width="30"/>用户管理</a></li>
+                <li role="presentation"><a href="#"><img src="../images/xiugai.png" height="20" width="20"/>修改密码</a></li>
+                <li role="presentation"><a href="#"><img src="../images/tc.png" height="30" width="30"/>退出系统</a></li>
+            </ul>
+        </section>
+        <!--右边栏部分-->
+        <section class="col-sm-3 col-lg-3 col-md-3 pull-right">
+
+        </section>
+    </section>
+    <footer class="text-center" style="background-color: #0077cc; height: 50px; line-height: 50px; color: white;">
+        版权归北大青鸟所有
+    </footer>
+</div>
+<script src="../js/jquery-3.2.0.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/bootstrap-datetimepicker.zh-CN.js"></script>
+</body>
+</html>

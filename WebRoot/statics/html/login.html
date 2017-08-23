@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>超市订单管理系统</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap-datetimepicker.css">
+    <style type="text/css">
+        .v-center{
+            margin-top:200px;
+        }
+    </style>
+</head>
+<body style="background-image: url(../images/login_bg.jpg);background-repeat: repeat-x;">
+<div class="container">
+    <div class="row v-center">
+        <div class="col-md-4 col-sm-4 col-xs-2"></div>
+        <div class="col-md-4 col-sm-4 col-xs-8" style="background-image: url(../images/formbg.png);background-repeat: no-repeat; height: 280px; width: 387px;padding: 52px 30px 10px 30px;">
+            <form action="<%=basePath%>user" method="post">
+                
+                <div class="form-group">
+                    <label for="userCode">用户名</label>
+                    <input autofocus="autofocus" placeholder="请输入用户名..." id="userCode" class="form-control" type="text" name="userCode"/>
+                </div>
+                <div class="form-group" >
+                    <label for="password">密码</label>
+                    <input id="password" placeholder="请输入密码..." class="form-control" type="password" name="password"/>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> Remember me
+                    </label>
+                </div>
+                <input class="btn btn-primary" type="submit" value="登录"/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">忘记密码?</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="reg.jsp">注册用户</a>
+                <input type="hidden" value="login" name="op"/>
+            </form>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-2"></div>
+    </div>
+</div>
+<script src="../js/jquery-3.2.0.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/bootstrap-datetimepicker.zh-CN.js"></script>
+</body>
+</html>
